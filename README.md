@@ -11,7 +11,7 @@ Siga estas etapas para contribuir para o projeto:
    git clone https://github.com/RaphaelRates/example-project-php.git example-project-php
    cd example-project-php
    composer install
-   docker-compose up
+   docker-compose up -d
    ```
 2. Crie seu arquivo de variável de ambiente na raiz do projeto com as seguintes variáveis:
     ```shell
