@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="../../public/css/home.css">
+<main class="container py-4">
+
+    <section>
+        <h2>Bem-vindo ao Seu Projeto</h2>
+        <p>Este é o conteúdo principal da página. Aqui você pode apresentar informações relevantes, notícias, ou qualquer conteúdo de destaque, como canais de YouTube com o do <strong>{{name}}</strong>. Onde {{description}}</p>
+    </section>
+
+    <section>
+        {{status}}
+        {{itens}}
+    </section>
+
+    <section>
+        <h1 class="text-center text-dark">Cadastro de Canal no YouTube</h1>
+
+        <form method="POST" action="/" class="form-container mx-auto" style="max-width: 600px;">
+            
+            <!-- Nome do Canal -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome do Canal:</label>
+                <input type="text" id="name" name="name" required maxlength="255" placeholder="Digite o nome do canal"
+                    class="form-control">
+            </div>
+            
+            <!-- URL do Site (YouTube) -->
+            <div class="mb-3">
+                <label for="site" class="form-label">URL do Site (YouTube):</label>
+                <input type="url" id="site" name="site" required maxlength="255" placeholder="Digite a URL do canal"
+                    class="form-control">
+            </div>
+            
+            <!-- Descrição -->
+            <div class="mb-3">
+                <label for="description" class="form-label">Descrição do Canal:</label>
+                <textarea id="description" name="description" rows="5" required placeholder="Digite a descrição do canal"
+                    class="form-control"></textarea>
+            </div>
+            
+            <!-- Botão de Enviar -->
+            <button type="submit" class="btn btn-success w-100">Cadastrar Canal</button>
+            <button type="reset" class="btn btn-danger w-100 mt-2">Limpar Formulário</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através do <a href="{{site}}">formulário de contato</a> ou pelas nossas redes sociais.</p>
+    </section>
+
+</main>

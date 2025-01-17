@@ -1,0 +1,14 @@
+<div class="bg-white p-3 border border-light mb-3 rounded">
+    <h2 class="m-0 mb-2 text-primary">{{name}} id: {{id}}</h2>
+    <p><strong>Site do YouTube:</strong> 
+        <a href="{{site}}" target="_blank" class="text-primary text-decoration-none">{{site}}</a>
+    </p>
+    <p><strong>Descrição:</strong> {{description}}</p>
+
+    <!-- Botões de ação -->
+    <div class="d-flex gap-2">
+        <a href="/{{id}}" class="btn btn-success">Ver</a>
+        <a href="/{{id}}/edit" class="btn btn-warning">Editar</a>
+        <a href="/{{id}}/delete" class="btn btn-danger">Deletar</a>
+    </div>
+</div>

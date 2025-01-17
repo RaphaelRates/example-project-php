@@ -1,0 +1,27 @@
+<form method="post" class="bg-white p-4 rounded shadow" style="max-width: 600px; margin: 0 auto;">
+        
+    <!-- ID do Canal (oculto) -->
+    
+    <!-- Nome do Canal -->
+    <div class="form-group">
+        <label for="name" class="text-muted">Nome do Canal:</label>
+        <input type="text" id="name" name="name" class="form-control" required maxlength="255" placeholder="Digite o nome do canal" value="{{name}}">
+    </div>
+    
+    <!-- URL do Site (YouTube) -->
+    <div class="form-group">
+        <label for="site" class="text-muted">URL do Site (YouTube):</label>
+        <input type="url" id="site" name="site" class="form-control" required maxlength="255" placeholder="Digite a URL do canal" value="{{site}}">
+    </div>
+    
+    <!-- Descrição -->
+    <div class="form-group">
+        <label for="description" class="text-muted">Descrição do Canal:</label>
+        <textarea id="description" name="description" rows="5" class="form-control" required placeholder="Digite a descrição do canal">{{description}}</textarea>
+    </div>
+    
+    <!-- Botões -->
+    <button type="submit" class="btn btn-success btn-block">Atualizar Canal</button>
+    <button type="reset" class="btn btn-danger btn-block mt-2">Limpar Alterações</button>
+</form>
+</div>

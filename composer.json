@@ -1,0 +1,18 @@
+{
+    "name": "rafaelrats/nodacweb",
+    "description": "Olympiad Questions Storage System - This project is a system developed to store, manage and retrieve questions from obs across various subjects. The application aims to facilitate access to a rich database of previous exam questions and simulations.",
+    "autoload": {
+        "psr-4": {
+            "NodacWeb\\": "app/",
+            "NodacWeb\\Core\\": "core/"
+            
+        }
+    },
+    "authors": [
+        {
+            "name": "Raphael Rates",
+            "email": "rafaelrats3@gmail.com"
+        }
+    ],
+    "require": {}
+}

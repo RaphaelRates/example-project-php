@@ -1,0 +1,40 @@
+# Composer
+/vendor/
+composer.lock
+
+# Diretórios de cache
+/cache/
+/tmp/
+/logs/
+
+# Arquivos de configuração locais
+.env
+.env.local
+.env.*.local
+.phpunit.result.cache
+
+# Arquivos de backup
+*.bak
+*.backup
+*.tmp
+*.swp
+
+# IDEs e editores
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos gerados
+*.log
+*.cache
+*.sql
+*.sqlite
+
+# Diretório de uploads (se aplicável)
+public/uploads/
+storage/
