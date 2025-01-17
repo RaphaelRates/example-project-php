@@ -1,6 +1,6 @@
-﻿# sistema-armazenamento-de-questoes-obs
+﻿# Exemplo de projeto em PHP
 
-Este repositório destina-se ao sistema de armazenamento de questões e alunos/jurados da OBS.
+Este repositório destina-se a um exempoode projeto utilizando o php em uma arquitetura MVC.
 
 ## Como contribuir
 
@@ -8,40 +8,36 @@ Siga estas etapas para contribuir para o projeto:
 
 1. Clone o repositório, instale as dependências e execute no docker:
    ```shell
-   git clone git@github.com:Calangio/sistema-armazenamento-de-questoes-obs.git sistema-armazenamento-de-questoes-obs
-   cd sistema-armazenamento-de-questoes-obs
+   git clone git@github.com:Calangio/sistema-armazenamento-de-questoes-obs.git example-project-php
+   cd example-project-php
    composer install
-   cd docker
+   docker-compose up
    ```
 2. Crie seu arquivo de variável de ambiente na raiz do projeto com as seguintes variáveis:
     ```shell
-   DB_HOST= mariadb
+   DB_HOST=mariadb
    DB_NAME=
    DB_USER=
    DB_PASSWORD=
    DB_PORT=
    DB_ROOT_PASSWORD=
    ```
-3. Eecutar o docker usando o arquivo ***docker-compose.ylm***
-   ```shell
-   docker-compose --env-file ../.env up -d
-   ```
-4. Verifique se está rodando localmente e sua maquina acessando o caminha a seguir:
+3. Verifique se está rodando localmente e sua maquina acessando o caminha a seguir:
 OBS: caso esteja dando algum erro, é porque ele carrega as variáveis depois de 7 segundos, deve ser algum erro de tempo de conexão com o banco de dados mariadb
    ```shell
       http://localhost:8000
       ```
-6. Crie uma issue com uma branch no repositório.
-7. Faça checkout para a branch da issue criada:
+4. Crie uma issue com uma branch no repositório.
+5. Faça checkout para a branch da issue criada:
    ```shell
    git checkout minha-branch-issue
    ```
-8. Faça suas alterações locais.
-9. Faça commit de suas alterações seguindo o [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/).
+6. Faça suas alterações locais.
+7. Faça commit de suas alterações seguindo o [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/).
    ```shell
    git commit -m <type>[optional scope]: <description>
    ```
-10. Envie suas alterações para a branch da issue.
+8. Envie suas alterações para a branch da issue.
    ```shell
    git push origin minha-branch-issue
    ```
