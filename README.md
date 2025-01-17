@@ -8,7 +8,7 @@ Siga estas etapas para contribuir para o projeto:
 
 1. Clone o repositório, instale as dependências e execute no docker:
    ```shell
-   git clone git@github.com:Calangio/sistema-armazenamento-de-questoes-obs.git example-project-php
+   git clone https://github.com/RaphaelRates/example-project-php.git example-project-php
    cd example-project-php
    composer install
    docker-compose up
